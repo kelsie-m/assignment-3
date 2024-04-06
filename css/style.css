@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div:nth-child(1) {
+    display: flex;
+    justify-self: left;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    padding: 0.5em;
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    height: 600px;
+    background-image: url(/images/hands-typing.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    max-width: 60%;
+    font-size: 2.5rem;
+    background-color: rgba(0, 0, 0, 50% );
+    text-shadow: 2px 2px 2px#000;
+    color: #fff;
+    padding: 0.5em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-grid h2 {
+    text-align: left;
+}
+
+.bio-pic {
+    align-self: end;
+    width: 100%;
+}
+
+#services {
+    background-color: #fafafa;
+    padding: 2em;
+}
+
+section h2 {
+    max-width: 940px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    font-size: small;
+}
+
+.grid article {
+    padding: 1em;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.grid article h3 {
+    margin-bottom: 0;
+}
+
+.grid article p {
+    padding-bottom: 2em;
+}
+
+article a:link, article a:visited {
+    margin-top: auto;
+    padding: 1em;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+article a:hover {
+    background-color: white;
+    color: black;  
+}
+
+#work {
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2em 0;
+    align-items: center;
+}
+
+#work p {
+    padding-bottom: 1em;
+}
+
+.image-grid {
+    max-width: 940px;
+    justify-content: center;
+    margin: 0 auto;
+    display: grid;
+    padding-bottom: 2em;
+    grid-template-areas: 
+    "div1 div1 div1 div2 div2 div2"
+    "div3 div3 div4 div4 div5 div5"
+}
+
+.image-grid img:nth-child(1) {
+    grid-area: div1;
+}
+
+.image-grid img:nth-child(2) {
+    grid-area: div2;
+}
+
+.image-grid img:nth-child(3) {
+    grid-area: div3;
+}
+
+.image-grid img:nth-child(4) {
+    grid-area: div4;
+}
+
+.image-grid img:nth-child(5) {
+    grid-area: div5;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+
+
+
